@@ -1,0 +1,101 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images.jpg);
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional darker background for contrast */
+    background-image: url('images.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Key property for glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+}
+
+/* Profile Card */
+.profile-card {
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    background: inherit;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff; /* Contrasting text color */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #ddd; /* Softer text color */
+}
+
+.profile-info strong {
+    color: #fff;
+}
+
+/* Logout Button */
+.profile-logout-btn {
+    background: rgba(255, 77, 77, 0.8); /* Slightly transparent button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.profile-logout-btn:hover {
+    background: rgba(214, 48, 49, 0.8);
+}
+
+/* Optional: Add a heading for better UI */
+h1 {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    top: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    background: inherit;
+    backdrop-filter: blur(10px);
+    margin: 100px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

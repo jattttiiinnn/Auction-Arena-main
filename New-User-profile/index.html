@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Auction Arena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="profile-container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-picture">
+        <img src="default-avatar.png" alt="User Avatar" id="profile-img">
+        <input type="file" id="upload-photo" style="display: none;">
+        <button id="edit-photo-btn">Edit Photo</button>
+      </div>
+      <div class="user-info">
+        <h1 id="user-name">John Doe</h1>
+        <p id="user-email">johndoe@example.com</p>
+        <p>Joined: <span id="join-date">January 2023</span></p>
+      </div>
+    </div>
+
+    <!-- Profile Sections -->
+    <div class="profile-tabs">
+      <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+      <button class="tab-btn" onclick="showTab('bids')">Bidding History</button>
+      <button class="tab-btn" onclick="showTab('listings')">My Listings</button>
+      <button class="tab-btn" onclick="showTab('settings')">Settings</button>
+    </div>
+
+    <div class="tab-content">
+      <!-- Overview Tab -->
+      <div id="overview" class="tab active">
+        <h2>Overview</h2>
+        <p>Bids Won: <strong>5</strong></p>
+        <p>Active Listings: <strong>3</strong></p>
+        <p>Watchlist Items: <strong>8</strong></p>
+      </div>
+
+      <!-- Bidding History Tab -->
+      <div id="bids" class="tab">
+        <h2>Bidding History</h2>
+        <ul>
+          <li>Auction Item 1 - <strong>Won</strong></li>
+          <li>Auction Item 2 - <strong>Lost</strong></li>
+          <li>Auction Item 3 - <strong>Won</strong></li>
+        </ul>
+      </div>
+
+      <!-- Listings Tab -->
+      <div id="listings" class="tab">
+        <h2>My Listings</h2>
+        <ul>
+          <li>Item 1 - <strong>Active</strong></li>
+          <li>Item 2 - <strong>Sold</strong></li>
+          <li>Item 3 - <strong>Expired</strong></li>
+        </ul>
+      </div>
+
+      <!-- Settings Tab -->
+      <!-- <div id="settings" class="tab">
+        <h2>Settings</h2>
+        <button>Change Password</button>
+        <button>Manage Payment Methods</button>
+        <button>Notification Preferences</button>
+        <button id="logout-btn">Logout</button>
+      </div> -->
+      <div class="settings">
+        <h3>Settings</h3>
+        <button onclick="changePassword()">Change Password</button>
+        <button onclick="managePaymentMethods()">Manage Payment Methods</button>
+        <button onclick="notificationPreferences()">Notification Preferences</button>
+        <button onclick="logout()">Logout</button>
+      </div>      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    background-color: #0d1117;
+    color: #ffffff;
+    font-family: sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Logo and Header */
+.mainlogo {
+    margin-top: 15px;
+    width: 80px;
+}
+
+#logotext {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #0d1117;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px solid grey;
+}
+
+#navbut {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.navbuttons {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbuttons:hover {
+    color: rgb(172, 172, 172);
+}
+
+/* Hero Section */
+.opening {
+    padding: 100px 5%;
+    text-align: left;
+    background: #0d1117;
+}
+
+#smart-bidding {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+    background-image: linear-gradient(rgb(114, 78, 190), rgb(133, 160, 203));
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#opening-head {
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+#opening-tag {
+    font-size: 1.5rem;
+    color: rgb(172, 172, 172);
+}
+
+/* Content Sections */
+.content-part {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 5%;
+}
+
+#part1-content {
+    flex: 1;
+    background-image: url('../../pics/homepage/main-background-cropped.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+.bar {
+    background-image: linear-gradient(transparent, #7C72FF 30%);
+    width: 3px;
+    min-height: 300px;
+}
+
+/* Email Subscription */
+.email-main {
+    width: 70%;
+    max-width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.email-main:focus {
+    outline: none;
+}
+
+.email-button {
+    font-size: 1rem;
+    height: 39px;
+    background-color: rgb(125, 95, 191);
+    border-radius: 0 5px 5px 0;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: rgb(105, 75, 171);
+}
+
+/* Auction Cards */
+.auction-card {
+    background-color: #0d1117;
+    border: 1px solid #666;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.auction-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #666;
+}
+
+.auction-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px 7px 0 0;
+}
+
+/* Responsive Design */
+

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    /* display: flex;
+    justify-content: center;*/
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../../pics/login/login-background.webp);
+    background-repeat: repeat;
+    background-size: cover;
+}
+.mainlogo{
+    margin-top: 15px;
+    width: 100px;
+}
+#logotext{
+    width: 200px;
+    margin-bottom: 25px;
+    margin-left: -20px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-left: 10px;
+    padding-right: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -20px;
+    background-color: #0d1117;
+}
+#navbut{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+
+}
+.navbuttons{
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-top: 35px;
+    padding: 15px;
+    padding-top: 0px;
+    text-decoration-line: none;
+}
+.navbuttons:hover{
+    color: rgb(172, 172, 172);
+}
+
+.login-container {
+    margin: auto;
+    margin-top: 100px;
+    background-color: #0d1117;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    /* color: #333; */
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    /* color: #555; */
+    color: white;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#email{
+    outline: none;
+}
+
+#password{
+    outline: none;
+}
+button {
+    background-color: mediumorchid;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+button:active {
+    background-color: rgb(225, 103, 255);
+}
+
+.signup-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: mediumorchid;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+    margin-left: 2.9em;
+    background: mediumorchid;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 1em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    width: 12em;
+    height: 2.8em;
+    padding-right: 2.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  

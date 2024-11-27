@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Auction Arena</title>
+    <link rel="stylesheet" href="css/coin.css">
+</head>
+<body>
+    <form action="/place-bid" method="POST">
+        <div class="container">
+            <div class="product-image">
+                <img src="Product Details/cup.png" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1>1877 Indian Head Cent</h1>
+                <p><strong>Starting Bid:</strong> $100</p>
+                <p><strong>Current Bid:</strong> $1500</p>
+                <p><strong>Auction Ends:</strong> 12/31/2024</p>
+                <p> <b>Description:- </b> This is a 1877 Indian Head Cent, a highly sought-after coin among collectors. The coin features the classic design of Lady Liberty wearing a Native American headdress, with the words "UNITED STATES OF AMERICA" inscribed around the edge. The year "1877" is prominently displayed at the bottom. This particular coin is encased in a protective holder, ensuring its preservation and authenticity. The 1877 Indian Head Cent is known for its rarity and historical significance, making it a valuable addition to any numismatic collection.</p>
+                <button type="submit" class="bid-button">Place Bid</button>
+            </div>
+    </form>
+    </div>
+    <script src="scripts.js">
+        const bidForm = document.getElementById('bidForm');
+                bidForm.addEventListener('submit', async (event) => {
+                    event.preventDefault();
+
+                    const itemId = document.getElementById('itemId').value;
+                    const bidAmount = document.getElementById('bidAmount').value;
+
+                    try {
+                        const response = await fetch('/place-bid', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ itemId, bidAmount }),
+                        });
+
+                        const result = await response.text();
+                        document.getElementById('status').textContent = result;
+                    } catch (error) {
+                        console.error('Error placing bid:', error);
+                        document.getElementById('status').textContent = 'Failed to place bid.';
+                    }
+                });
+    </script>
+</body>
+</html>

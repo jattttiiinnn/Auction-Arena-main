@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../../css/contact/contact.css">
+</head>
+
+<body>
+    <div class="flex">
+        <div class="container">
+            <h1>Online Auction Management</h1>
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p><strong>Email:</strong> <a href="onlineauction arena.com">onlineauctionarena.com</a></p>
+                <p><strong>Contact Number:</strong> +91 88564xxxx</p>
+                <p><strong>Address:</strong> 123 Auction Lane, Bid City, ABC 456789 ,Chandigarh Patiala National Highway (NH- 64),
+                    Village Jansla Rajpura,
+                Punjab Pin Code-140401.</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Get In Touch With Us</h2>
+            <p>Have a question? We're here to help!</p>
+        
+            <form action="http://localhost:3000/submit" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department">
+                        <option value="general">General Inquiries</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="wholesale">Wholesale</option>
+                        <option value="customer-experience">Customer Experience</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

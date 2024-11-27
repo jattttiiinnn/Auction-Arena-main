@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Auction Arena</title>
+    <link rel="stylesheet" href="css/cup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="Product Details/cup.png" alt="Product Image">
+        </div>
+        <div id="product-1" class="product-details">
+            <h1>Antique Gold Thimble with Monogram</h1>
+            <p><strong>Starting Bid:</strong> $100</p>
+            <p><strong>Current Bid:</strong> $<span class="current-bid">130</span></p>
+            <p><strong>Auction Ends:</strong> 12/31/2024</p>
+            <p><strong>Description:</strong> This exquisite antique gold thimble features intricate craftsmanship and a beautifully engraved monogram "HCM" on its band. The top and sides are adorned with a classic honeycomb pattern, providing both functionality and elegance. The lower band is decorated with ornate floral designs, adding to its vintage charm. This thimble is not only a practical sewing accessory but also a collectible piece of art, perfect for enthusiasts of antique sewing tools or those who appreciate fine craftsmanship.</p>
+            <!-- <button  onclick="showBidInput(1)" class="bid-button">Place Bid</button> -->
+            <button id="place-bid-button" onclick="showBidInput(1)" class="cssbuttons-io-button">
+                Bid
+                <div class="icon">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            <div id="bid-input-container-1" class="bid-input-container" style="display: none;">
+                <input type="number" id="bid-input-1" placeholder="Enter your bid" />
+                <button onclick="placeBid(1)" class="submit-bid-button">Submit</button>
+                
+                <p class="error-message" style="display: none; color: red;">Your bid must be higher than the current bid!</p>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/bid-input.js">
+    </script>
+</body>
+</html>
