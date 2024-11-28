@@ -3,7 +3,7 @@ const path = require('path');
 const { Client } = require('pg');
 const bodyParser = require('body-parser'); // Import body-parser
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 // Middleware for parsing request bodies
 app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
